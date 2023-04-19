@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>SimpleSite <div id = "cart">
+      <img  src="cart.png" alt="cart-icon">
+      </div></h1>
+    
+    <hr>
+    
+
+    <!-- Slideshow container -->
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    
+    <img src="image1.png" style="width:50%">
+    
+  </div>
+
+  <div class="Containers">
+    
+    <img src="image2.jpg" style="width:50%">
+    
+  </div>
+
+  <div class="Containers">
+   
+    <img src="image3.png" style="width:50%">
+    
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div> 
+   
+   <hr>
+    
+    <div class ="center">   
+      <div class = "img1">
+      <img src="image1.png" alt="Huwaei">
+      <h2>Huwaei </h2>
+      <div><p><strong>33,000</strong></p><button id = "btn1" class="btn">Order </button></div>
+      </div>
+  
+      <div class = "img2">
+          <img src="image2.jpg" alt="Huwaei">
+          <h2>iphone11 </h2>
+          <div><p><strong> 30,000</strong></p><button id = "btn2" class="btn">Order </button></div>
+          </div>
+          <div class = "img3">
+              <img src="image3.png" alt="Huwaei">
+              <h2>Iphone 14 promax </h2>
+              <div><p><strong> 79,990</strong></p><button id = "btn3" class="btn">Order </button></div>
+              </div>
+              <div class = "img4">
+                  <img src="image1.png" alt="Huwaei">
+                  <h2>Huwaei </h2>
+                  <div><p><strong> 33,000</strong></p><button id = "btn4" class="btn">Order </button></div>
+                  </div>
+                  </div>
+                  <div class = "center2">
+                  <div class = "img5">
+                      <img src="image2.jpg" alt="Huwaei">
+                      <h2>Iphone11 </h2>
+                      <div><p><strong> 30,000</strong></p><button id = "btn5" class="btn">Order </button></div>
+                      </div>
+                      <div class = "img6">
+                          <img src="image3.png" alt="Huwaei">
+                          <h2>Iphone14 Pro max </h2>
+                          <div><p><strong> 79,900</strong></p><button id = "btn6" class="btn">Order </button></div>
+                          </div>
+                          <div class = "img7">
+                              <img src="image1.png" alt="Huwaei">
+                              <h2>Huwaei </h2>
+                              <div><p><strong> 33,000</strong></p><button id = "btn7" class="btn">Order </button></div>
+                              </div>
+                              <div class = "img8">
+                                  <img src="image2.jpg" alt="Huwaei">
+                                  <h2>Iphone11 </h2>
+                 <div><p><strong> 30,000</strong></p><button id = "btn8" class="btn">Order </button></div>
+              </div>
+          </div>
+          </div>
+      
+      </div>
+      <div class="carousel">
+        <div class="carousel-items">
+          <!-- Products will be dynamically added here -->
+        </div>
+        <div class="carousel-nav">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+      
+      <div class="cart-icon" onclick="openCart()">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </div>
+      
+      <div class="modal" id="cart-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeCart()">&times;</span>
+          <h2>Shopping Cart</h2>
+          <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+          </ul>
+        </div>
+      </div>
+
+      <script src="java.js"></script>
+</body>
+</html>
